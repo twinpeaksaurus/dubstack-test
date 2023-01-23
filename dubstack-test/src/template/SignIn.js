@@ -14,6 +14,8 @@ import withRoot from './modules/withRoot';
 
 function SignIn() {
   const [sent, setSent] = React.useState(false);
+  
+  console.log(this.state);
 
   const validate = (values) => {
     const errors = required(['email', 'password'], values);
@@ -43,7 +45,7 @@ function SignIn() {
           <Typography variant="body2" align="center">
             {'Not a member yet? '}
             <Link
-              href="/sign-up/"
+              href="/signup/"
               align="center"
               underline="always"
             >
