@@ -5,6 +5,8 @@ import Link from '@mui/material/Link';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
 import TextField from '../components/TextField';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function Copyright() {
   return (
@@ -59,17 +61,25 @@ export default function AppFooter() {
               sx={{ height: 120 }}
             >
               <Grid item sx={{ display: 'flex' }}>
-                <Box component="a" href="https://mui.com/" sx={iconStyle}>
-                  <img
+                <Box component="a" href="https://github.com/twinpeaksaurus" sx={iconStyle}>
+
+
+                  <GitHubIcon sx={{ fontSize: 40 }} />
+
+                  {
+                  /* <img
                     src="/static/themes/onepirate/appFooterFacebook.png"
                     alt="Facebook"
-                  />
+                  /> */}
                 </Box>
                 <Box component="a" href="https://twitter.com/MUI_hq" sx={iconStyle}>
-                  <img
+
+                  <LinkedInIcon sx={{ fontSize: 48 }} />
+
+                  {/* <img
                     src="/static/themes/onepirate/appFooterTwitter.png"
                     alt="Twitter"
-                  />
+                  /> */}
                 </Box>
               </Grid>
               <Grid item>
@@ -90,7 +100,7 @@ export default function AppFooter() {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={6} sm={8} md={4}>
+          {/* <Grid item xs={6} sm={8} md={4}>
             <Typography variant="h6" marked="left" gutterBottom>
               Language
             </Typography>
@@ -109,9 +119,9 @@ export default function AppFooter() {
                 </option>
               ))}
             </TextField>
-          </Grid>
+          </Grid> */}
           <Grid item>
-            <Typography variant="caption">
+            {/* <Typography variant="caption">
               {'Icons made by '}
               <Link href="https://www.freepik.com" rel="sponsored" title="Freepik">
                 Freepik
@@ -129,7 +139,7 @@ export default function AppFooter() {
               >
                 CC 3.0 BY
               </Link>
-            </Typography>
+            </Typography> */}
           </Grid>
         </Grid>
       </Container>

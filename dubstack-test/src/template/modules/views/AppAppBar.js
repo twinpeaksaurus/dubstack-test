@@ -30,7 +30,7 @@ function AppAppBar() {
               color="inherit"
               variant="h6"
               underline="none"
-              href="/sign-in/"
+              href="/signin/"
               sx={rightLink}
             >
               {'Sign In'}
@@ -38,7 +38,7 @@ function AppAppBar() {
             <Link
               variant="h6"
               underline="none"
-              href="/sign-up/"
+              href="/signup/"
               sx={{ ...rightLink, color: 'secondary.main' }}
             >
               {'Sign Up'}

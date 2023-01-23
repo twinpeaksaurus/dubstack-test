@@ -4,6 +4,9 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
+import CheckBoxIcon from '@mui/icons-material/CheckBox';
+import PsychologyIcon from '@mui/icons-material/Psychology';
+import NewspaperIcon from '@mui/icons-material/Newspaper';
 
 const item = {
   display: 'flex',
@@ -28,60 +31,33 @@ function ProductValues() {
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues1.svg"
-                alt="suitcase"
-                sx={{ height: 55 }}
-              />
+              <CheckBoxIcon sx={{ fontSize: 50 }} />
               <Typography variant="h6" sx={{ my: 5 }}>
-                The best luxury hotels
+                Easy to Use
               </Typography>
               <Typography variant="h5">
-                {
-                  'From the latest trendy boutique hotel to the iconic palace with XXL pool'
-                }
-
-                {
-                  ', go for a mini-vacation just a few subway stops away from your home.'
-                }
+                {`Create an account and blog. Select your favorite topics and get started.`}
               </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues2.svg"
-                alt="graph"
-                sx={{ height: 55 }}
-              />
+              <PsychologyIcon sx={{ fontSize: 100 }} />
               <Typography variant="h6" sx={{ my: 5 }}>
-                New experiences
+                New Ideas
               </Typography>
               <Typography variant="h5">
-                {
-                  'Privatize a pool, take a Japanese bath or wake up in 900m2 of garden… '
-                }
-
-                {'your Sundays will not be alike.'}
               </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} md={4}>
             <Box sx={item}>
-              <Box
-                component="img"
-                src="/static/themes/onepirate/productValues3.svg"
-                alt="clock"
-                sx={{ height: 55 }}
-              />
+              <NewspaperIcon sx={{fontSize:60}}/>
               <Typography variant="h6" sx={{ my: 5 }}>
-                Exclusive rates
+                Newsletters
               </Typography>
               <Typography variant="h5">
-                {'By registering, you will access specially negotiated rates '}
-                {'that you will not find anywhere else.'}
+                {`Create and subscribe to newsletters created by your favorite bloggers, delivered to readers by email.`}
               </Typography>
             </Box>
           </Grid>

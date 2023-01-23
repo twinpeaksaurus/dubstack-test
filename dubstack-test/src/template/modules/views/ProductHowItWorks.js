@@ -5,6 +5,9 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
+import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
+import PersonIcon from '@mui/icons-material/Person';
+import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 
 const item = {
   display: 'flex',
@@ -53,51 +56,62 @@ function ProductHowItWorks() {
           }}
         />
         <Typography variant="h4" marked="center" component="h2" sx={{ mb: 14 }}>
-          How it works
+          Getting Started
         </Typography>
         <div>
           <Grid container spacing={5}>
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>1.</Box>
-                <Box
+                {/* <Box
                   component="img"
                   src="/static/themes/onepirate/productHowItWorks1.svg"
                   alt="suitcase"
                   sx={image}
-                />
+                /> */}
+                <PersonIcon sx={{
+                  fontSize: 90,
+                  margin: 4
+                }} />
                 <Typography variant="h5" align="center">
-                  Appointment every Wednesday 9am.
+                  Create an account.
                 </Typography>
               </Box>
             </Grid>
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>2.</Box>
-                <Box
+                {/* <Box
                   component="img"
                   src="/static/themes/onepirate/productHowItWorks2.svg"
                   alt="graph"
                   sx={image}
-                />
+                /> */}
+                <HistoryEduIcon sx={{
+                  fontSize: 90,
+                  margin: 4
+                }} />
                 <Typography variant="h5" align="center">
-                  First come, first served. Our offers are in limited quantities, so
-                  be quick.
-                </Typography>
+                  Create a blog, follow your favorites, and create your first post!                </Typography>
               </Box>
             </Grid>
             <Grid item xs={12} md={4}>
               <Box sx={item}>
                 <Box sx={number}>3.</Box>
-                <Box
+                {/* <Box
                   component="img"
                   src="/static/themes/onepirate/productHowItWorks3.svg"
                   alt="clock"
                   sx={image}
-                />
+                /> */}
+                <LocalLibraryIcon sx={{
+                  fontSize: 90,
+                  margin: 4
+                }} />
+
                 <Typography variant="h5" align="center">
-                  {'New offers every week. New experiences, new surprises. '}
-                  {'Your Sundays will no longer be alike.'}
+                  {'Read. Write. Discuss. Argue.'}
+                  {'Learn. Grow. Connect.'}
                 </Typography>
               </Box>
             </Grid>
@@ -108,10 +122,10 @@ function ProductHowItWorks() {
           size="large"
           variant="contained"
           component="a"
-          href="/sign-up/"
+          href="/signup/"
           sx={{ mt: 8 }}
         >
-          Get started
+          Join
         </Button>
       </Container>
     </Box>
