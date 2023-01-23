@@ -11,11 +11,11 @@ import RFTextField from './modules/form/RFTextField';
 import FormButton from './modules/form/FormButton';
 import FormFeedback from './modules/form/FormFeedback';
 import withRoot from './modules/withRoot';
+import loginService from '../services/login'
 
 function SignIn() {
   const [sent, setSent] = React.useState(false);
-  
-  console.log(this.state);
+  console.log(values.email);
 
   const validate = (values) => {
     const errors = required(['email', 'password'], values);
@@ -30,8 +30,18 @@ function SignIn() {
     return errors;
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async (event) => {
+    await console.log(values.email)
     setSent(true);
+    console.log(sent);
+    // event.preventDefault();
+    // try {
+    const user = await loginService.login(
+      'jalom@gmail.com', 'secret');
+    // console.log(user);
+    // }
+    // catch (exception) {
+    // }
   };
 
   return (
